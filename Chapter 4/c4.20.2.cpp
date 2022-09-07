@@ -12,9 +12,9 @@ int first_in_set(string str, string set)
 {
    if(str.length()>1)
       {
-      for (int i = 0; i < str.length()-1; i++)
+      for (int i = 0; i < str.length(); i++)
       {
-         for (int j = 0; j < set.length()-1; j++)
+         for (int j = 0; j < set.length(); j++)
          {
             if(str.substr(i,1)==set.substr(j,1))
             {
