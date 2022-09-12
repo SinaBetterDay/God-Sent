@@ -16,3 +16,26 @@ void remove_adjacent_duplicates(vector<string>& words)
       }
    }
 }
+
+
+
+// another solution >>>
+
+void remove_adjacent_duplicates(vector<string>& words)
+{
+   for (int i = 0; i < words.size();)
+   {
+      if (words[i] == words[i+1])
+      {
+         for(int j = i; j < words.size(); j++)
+         {
+            words[j] = words[j + 1];
+         }
+         words.pop_back();
+      }
+      else
+      {
+         i++;
+      }
+   }
+}
