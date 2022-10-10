@@ -26,7 +26,6 @@ private:
 void Lock::push(int button)
 {
    input = input * 10 + button;
-   cout << input << endl;
 }
 
 bool Lock::open()
