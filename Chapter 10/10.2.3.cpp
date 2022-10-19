@@ -1,3 +1,5 @@
+#questions may differ from mine
+
 1
    char* cargoLabelPointer = &cargoLabel;
    int* armchairCountPointer = &armchairCount;
@@ -21,3 +23,11 @@
 
 
 3
+   if (labelPointer == nullptr)
+   {
+      cout << "labelPointer is null." << endl;
+   }
+   else
+   {
+      cout << *labelPointer << endl;
+   }
