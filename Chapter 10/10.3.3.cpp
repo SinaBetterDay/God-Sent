@@ -24,3 +24,11 @@
    SoundWave* mySoundWave;
    mySoundWave = new SoundWave(powerValue, distanceValue);
    mySoundWave->IncreasePowerAndDistance();
+
+
+4
+   myMovingBody = new MovingBody();
+   myMovingBody->Read();
+   myMovingBody->Print();
+   
+   delete myMovingBody;
