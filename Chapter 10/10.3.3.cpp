@@ -15,3 +15,12 @@
 
 
 3
+   double powerValue;
+   double distanceValue;
+
+   cin >> powerValue;
+   cin >> distanceValue;
+   
+   SoundWave* mySoundWave;
+   mySoundWave = new SoundWave(powerValue, distanceValue);
+   mySoundWave->IncreasePowerAndDistance();
