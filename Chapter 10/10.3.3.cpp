@@ -32,3 +32,14 @@
    myMovingBody->Print();
    
    delete myMovingBody;
+
+
+5
+   cin >> count;
+   myBallObjects = new BallObject[count];
+   
+   for (i = 0; i < count; i++)
+   {
+      myBallObjects[i].Read();
+      myBallObjects[i].Print();
+   }
