@@ -1,4 +1,4 @@
-#questions might differ from mine
+//questions might differ from mine
 
 1
    myDonkey = new Donkey(ageValue,weightValue);
