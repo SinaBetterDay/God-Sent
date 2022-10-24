@@ -9,4 +9,13 @@
 
 
 2.
-  
+   for (i = 0; i < friendCount; i++)
+   {
+      cin >> inputValue;
+      currFriend = new FriendNode(inputValue);
+      lastFriend->InsertAfter(currFriend);
+      lastFriend = currFriend;
+   }
+
+
+3.
