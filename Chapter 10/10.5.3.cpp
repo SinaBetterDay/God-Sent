@@ -19,3 +19,12 @@
 
 
 3.
+   currWeight = headWeight;
+   while(currWeight != nullptr)
+   {
+      if(currWeight->GetNodeData() < 0)
+      {
+         cout << currWeight->GetNodeData() << " is a bad entry." << endl;
+      }
+      currWeight = currWeight->GetNext();
+   }
