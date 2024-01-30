@@ -11,7 +11,7 @@ public class BookshelfInfo {
       {
          System.out.println("Too many books");
       }
-      else if (numBooks >= 20)
+      else if (numBooks >= 29)
       {
          System.out.println("Full-wall bookshelf");
       }
