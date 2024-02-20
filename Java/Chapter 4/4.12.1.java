@@ -14,6 +14,12 @@ public class LabProgram {
              count++;
          }
       }
-      System.out.printf("%d %c%s\n", count, targetChar, (count == 1) ? "" : "'s");
+      System.out.print(count + " " + targetChar);
+      
+      if (count != 1) {
+         System.out.print("'s");
+      }
+      
+      System.out.println();
    }
 }
