@@ -124,11 +124,15 @@ public class Driver {
     String fName = scnr.next();
     String lName = scnr.next();
 
-    System.out.print("Enter employee address (city, state) ");
-    String city = scnr.next();
-    String state = scnr.next();
+    Address addr = null;
 
-    Address addr = new Address(city, state);
+    // If there is a previous employee, ask for the address
+    if (Employee.getCount() == 2) {
+        System.out.print("Enter employee address (city, state) ");
+        String city = scnr.next();
+        String state = scnr.next();
+        addr = new Address(city, state);
+    }
 
     System.out.println("Creating employee " + fName + " " + lName);
     if (Employee.getCount() == 0) {
