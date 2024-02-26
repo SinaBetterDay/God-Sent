@@ -1,3 +1,9 @@
+/*Four integers are read from input into four variables, student1 to student4. Declare an array of integers, named studentNums, of size 4. Then, initialize the elements of studentNums with student1 to student4, in reverse order.
+
+Ex: If the input is 61 84 56 51, then the output is:
+
+Student numbers: 51 56 84 61*/
+
 import java.util.Scanner;
 
 public class StudentList {
