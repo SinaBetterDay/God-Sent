@@ -28,8 +28,9 @@ public class CombineArrays {
 
       for (i = 0; i < NUM_VALS; ++i) {
          if (memberAges[i] >= 30) {
-            System.out.println(memberScores[i]);
+            System.out.print(memberScores[i] + " ");
          }
       }
+      System.out.println();
    }
 }
