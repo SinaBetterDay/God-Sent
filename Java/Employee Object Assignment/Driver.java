@@ -1,31 +1,5 @@
 import java.util.Scanner;
 
-class Address {
-  private String city;
-  private String state;
-
-  public Address(String city, String state) {
-    this.city = city;
-    this.state = state;
-  }
-
-  public String getCity() {
-    return city;
-  }
-
-  public void setCity(String city) {
-    this.city = city;
-  }
-
-  public String getState() {
-    return state;
-  }
-
-  public void setState(String state) {
-    this.state = state;
-  }
-}
-
 class Employee {
   private String fName;
   private String lName;
@@ -56,32 +30,16 @@ class Employee {
     return fName;
   }
 
-  public void setFName(String fName) {
-    this.fName = fName;
-  }
-
   public String getLName() {
     return lName;
-  }
-
-  public void setLName(String lName) {
-    this.lName = lName;
   }
 
   public Employee getBoss() {
     return boss;
   }
 
-  public void setBoss(Employee boss) {
-    this.boss = boss;
-  }
-
   public Address getAddr() {
     return addr;
-  }
-
-  public void setAddr(Address addr) {
-    this.addr = addr;
   }
 
   public static int getCount() {
@@ -104,13 +62,31 @@ class Employee {
   }
 }
 
+class Address {
+  private String city;
+  private String state;
+
+  public Address(String city, String state) {
+    this.city = city;
+    this.state = state;
+  }
+
+  public String getCity() {
+    return city;
+  }
+
+  public String getState() {
+    return state;
+  }
+}
+
 public class Driver {
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+    Scanner scnr = new Scanner(System.in);
 
-    Employee emp1 = createEmployee(scanner, null);
-    Employee emp2 = createEmployee(scanner, emp1);
-    Employee emp3 = createEmployee(scanner, emp2);
+    Employee emp1 = createEmployee(scnr, null);
+    Employee emp2 = createEmployee(scnr, emp1);
+    Employee emp3 = createEmployee(scnr, emp2);
 
     emp1.displayInfo();
     emp2.displayInfo();
@@ -126,7 +102,6 @@ public class Driver {
 
     Address addr = null;
 
-    // If there is a previous employee, ask for the address
     if (Employee.getCount() == 2) {
         System.out.print("Enter employee address (city, state) ");
         String city = scnr.next();
